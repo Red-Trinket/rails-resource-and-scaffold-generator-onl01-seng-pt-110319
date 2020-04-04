@@ -229,3 +229,14 @@ Processing by ArticlesController#new as HTML
 Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/articles" for 73.88.203.90 at 2020-04-04 15:37:34 +0000
+Cannot render console from 73.88.203.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y0SGeT+v/FMGkGlMp8x8rYDShl4/6VSXrji638kJk8FL8sJqJcU1GTHBJGMbK11XTtQSRqXKZ/1r65pKSI2srA==", "article"=>{"title"=>"But they say not to use it", "body"=>"I can't wait to see what the downside is"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "But they say not to use it"], ["body", "I can't wait to see what the downside is"], ["created_at", "2020-04-04 15:37:34.100181"], ["updated_at", "2020-04-04 15:37:34.100181"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://67.205.165.109:35957/articles/3
+Completed 302 Found in 13ms (ActiveRecord: 9.1ms)
+
+
